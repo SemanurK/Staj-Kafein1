@@ -83,8 +83,8 @@ public class MailTalep {
 
 		String host = "pop.gmail.com";// change accordingly
 		String mailStoreType = "imap";
-		String username = "kafeinxx8@gmail.com";// change accordingly
-		String password = "174kafein*";// change accordingly
+		String username = "mail";// change accordingly
+		String password = "sifre";// change accordingly
 		check(host, mailStoreType, username, password);
 		dao.listkontrol_sprint(list2);
 	
