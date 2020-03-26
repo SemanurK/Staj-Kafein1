@@ -97,8 +97,8 @@ public class FetchingEmail {
       String host = "pop.gmail.com";// change accordingly
       String mailStoreType = "pop3";
       String username = 
-         "kafeinxx8@gmail.com";// change accordingly
-      String password = "123456789k.";// change accordingly
+         "mail";// change accordingly
+      String password = "sifre.";// change accordingly
 
       //Call method fetch
       fetch(host, mailStoreType, username, password);
