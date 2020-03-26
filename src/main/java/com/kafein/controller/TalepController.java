@@ -99,6 +99,14 @@ public class TalepController {
 		return "/Talep/table";
 	}
 
+//	@RequestMapping(value = "/mailkontrol", method = RequestMethod.GET)
+//	public String mailkontol(ModelMap model)
+//	{
+//		MailTalep mt=new MailTalep();
+//		mt.main();
+//		model.addAttribute("taleplist", dao.getTaleps());
+//		return "redirect:/Talep/index";
+//	}
 	@InitBinder
 	protected void initBinder(WebDataBinder binder) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

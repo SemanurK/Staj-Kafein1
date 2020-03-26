@@ -87,6 +87,10 @@ body {
 						<Button class="btn btn-info d-none d-lg-block m-l-15"
 							style="float: right;">Talep Ekle</Button>
 					</form>
+					<form action="<%=request.getContextPath()%>/Mail/index">
+					<Button class="btn btn-info d-none d-lg-block m-l-15"
+							style="float: right;">Mail Kontrol Et</Button>
+					</form>
 				</div>
 				<div class="card-body">
 					<div class="col-sm-12">
@@ -258,8 +262,27 @@ body {
 											"success");
 								}
 							}
+							var yenitalepsayisi='${yenitalepsayisi}';
+							if (yenitalepsayisi != null && yenitalepsayisi != '') {
+
+								if (yenitalepsayisi == 0) {
+									swal(
+											"Yeni Talep Bulunmamakta !",
+											"",
+											"info");
+								} else {
+									swal(
+											"Yeni Talep !",
+											"Sistemde "+yenitalepsayisi+" adet yeni talep mevcut.",
+											"info");
+								}
+							}
+
+					
 
 						});
+		
+		
 	</script>
 	<script type="text/javascript">
 		function Ara() {
